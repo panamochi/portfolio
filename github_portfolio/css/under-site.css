@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+html {
+  text-align: center;
+}
+
+/* ファーストビュー部分 */
+
+.under-fv-area {
+  width: 100%;
+  height: 350px;
+  position: relative;
+}
+
+.under-fv {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.under-fv > img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content .drop {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.5),
+    10px 20px 20px rgba(0, 0, 0, 0.2), 10px 20px 20px rgba(0, 0, 0, 0.5),
+    inset -20px -20px 30px rgba(255, 255, 255, 0.5);
+  transition: 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 53% 47% 46% 54% / 58% 37% 63% 42%;
+}
+
+.content .drop::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 80px;
+  width: 35px;
+  height: 35px;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.content .drop::after {
+  content: "";
+  position: absolute;
+  top: 90px;
+  left: 100px;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.content .drop:hover {
+  border-radius: 50%;
+}
+
+.content .drop > h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 2rem;
+  font-weight: 500;
+  text-shadow: 1px 2px 10px rgba(0, 0, 0, 1);
+}
+
+@media screen and (min-width: 769px) {
+  .under-fv-area,
+  .under-fv > img {
+    height: 450px;
+  }
+
+  .content .drop {
+    width: 400px;
+    height: 400px;
+  }
+
+  .content .drop::before {
+    top: 70px;
+    left: 100px;
+    width: 35px;
+    height: 35px;
+  }
+
+  .content .drop::after {
+    top: 110px;
+    left: 120px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .content .drop > h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+    letter-spacing: 0.2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .under-fv-area,
+  .under-fv > img {
+    height: 550px;
+  }
+
+  .content .drop {
+    width: 500px;
+    height: 500px;
+  }
+
+  .content .drop::before {
+    top: 90px;
+    left: 120px;
+    width: 35px;
+    height: 35px;
+  }
+
+  .content .drop::after {
+    top: 130px;
+    left: 140px;
+    width: 15px;
+    height: 15px;
+  }
+}
+/*`-----  */
+
+/* インナーレイアウト（メイン部分） */
+.inner {
+  padding: 10vh 0;
+}
+
+/* main */
+.works-catalog,
+.blog-catalog {
+  position: relative;
+}
+
+/* 背景の丸 */
+.works-catalog::before,
+.blog-catalog::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgb(215, 238, 163),
+    rgb(137, 182, 107, 0.5)
+  );
+  clip-path: circle(45.3% at 0% 100%);
+}
+
+.works-catalog::after,
+.blog-catalog::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgb(215, 238, 163),
+    rgb(137, 182, 107, 0.5)
+  );
+  clip-path: circle(27.1% at 100% 0%);
+}
+/* --------- */

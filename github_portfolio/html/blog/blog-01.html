@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog-Mahiro,K PORTFOLIO</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../../img/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="../../img/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="shortcut icon" href="../../img/favicon/favicon.ico" />
+    <script src="../../js/smoothscroll.min.js"></script>
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/under-site.css" />
+    <link rel="stylesheet" href="../../css/blog/blog.css" />
+    <link rel="stylesheet" href="../../css/blog/blog-slide.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- ヘッダー -->
+      <header class="header-area">
+        <div class="header">
+          <div class="header-inner flex">
+            <h1 class="header-logo">
+              <a href="../../index.html">
+                <img src="../../img/pf-logo.svg" alt="Mahiro,K PORTFOLIO" />
+              </a>
+            </h1>
+
+            <!-- ハンバーガーメニュー -->
+            <div class="hamburger-menu">
+              <input type="checkbox" id="menu-btn-check" />
+
+              <label for="menu-btn-check" class="menu-btn"><span></span></label>
+
+              <div class="menu-content">
+                <ul>
+                  <li><a href="../../index.html">Home</a></li>
+                  <li><a href="../about.html">About</a></li>
+                  <li><a href="../works-catalog.html">Works</a></li>
+                  <li><a href="../blog-catalog.html">Blog</a></li>
+                  <li><a href="../contactform.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- ナヴィゲーション -->
+            <nav class="header-nav">
+              <ul class="nav flex">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../works-catalog.html">Works</a></li>
+                <li><a href="../blog-catalog.html">Blog</a></li>
+                <li><a href="../contactform.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- ページトップボタン -->
+        <div class="home">
+          <img src="../../img/Top-btn@3x.png" alt="" />
+        </div>
+      </header>
+
+      <!-- メイン -->
+      <main class="main">
+        <div class="under-fv-area">
+          <div class="under-fv">
+            <img src="../../img/under-fv-img-8bit.jpg" alt="" />
+          </div>
+
+          <div class="content">
+            <div class="drop">
+              <h2>BLOG</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-content">
+          <div class="main-ttl_area position-relative-1">
+            <h2 class="main-ttl">
+              JavaScriptを使わずにCSSだけで<br />
+              スライドショーを実装する方法
+            </h2>
+          </div>
+
+          <!-- 矢印ボタン付きスライドショー -->
+          <section class="cont position-relative-1">
+            <div class="inner">
+              <h2 class="cont-title">矢印ボタン付きスライドショー</h2>
+              <div class="slideshow">
+                <input type="radio" name="slideshow" id="switch1" checked />
+                <input type="radio" name="slideshow" id="switch2" />
+                <input type="radio" name="slideshow" id="switch3" />
+                <input type="radio" name="slideshow" id="switch4" />
+
+                <div class="slideContents">
+                  <div id="slide1">
+                    <img
+                      src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8JUU2JTk4JTlGJUU3JUE5JUJBfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=1920&q=60"
+                      alt=""
+                    />
+                  </div>
+
+                  <div id="slide2">
+                    <img
+                      src="https://images.unsplash.com/photo-1528818955841-a7f1425131b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8JUU2JTk4JTlGJUU3JUE5JUJBfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=1920&q=60"
+                      alt=""
+                    />
+                  </div>
+
+                  <div id="slide3">
+                    <img
+                      src="https://images.unsplash.com/photo-1468276311594-df7cb65d8df6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8JUU2JTk4JTlGJUU3JUE5JUJBfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=1920&q=60"
+                      alt=""
+                    />
+                  </div>
+
+                  <div id="slide4">
+                    <img
+                      src="https://images.unsplash.com/photo-1596437974652-b146e5833dbd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fCVFNiU5OCU5RiVFNyVBOSVCQXxlbnwwfDB8MHx8&auto=format&fit=crop&w=1920&q=60"
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <p class="arrow prev">
+                  <i class="ico"></i>
+                  <label for="switch1"></label>
+                  <label for="switch2"></label>
+                  <label for="switch3"></label>
+                  <label for="switch4"></label>
+                  <!-- <label for="switch5"></label> -->
+                </p>
+
+                <p class="arrow next">
+                  <i class="ico"></i>
+                  <label for="switch1"></label>
+                  <label for="switch2"></label>
+                  <label for="switch3"></label>
+                  <label for="switch4"></label>
+                  <!-- <label for="switch5"></label> -->
+                </p>
+              </div>
+              <h3>参考サイト</h3>
+
+              <a
+                href="https://lopan.jp/css-animation/slideshow/"
+                target="_blank"
+                >スライドショー 動くためのメモ。</a
+              >
+            </div>
+          </section>
+
+          <!-- フェードイン･アウトするスライドショー -->
+          <section class="cont position-relative-1">
+            <div class="inner">
+              <h2 class="cont-title">フェードイン･アウトするスライドショー</h2>
+              <div class="slide-fade">
+                <img
+                  src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8JUU2JTk4JTlGJUU3JUE5JUJBfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=1920&q=60"
+                  alt=""
+                />
+
+                <img
+                  src="https://images.unsplash.com/photo-1528818955841-a7f1425131b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8JUU2JTk4JTlGJUU3JUE5JUJBfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=1920&q=60"
+                  alt=""
+                />
+
+                <img
+                  src="https://images.unsplash.com/photo-1468276311594-df7cb65d8df6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8JUU2JTk4JTlGJUU3JUE5JUJBfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=1920&q=60"
+                  alt=""
+                />
+
+                <img
+                  src="https://images.unsplash.com/photo-1596437974652-b146e5833dbd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fCVFNiU5OCU5RiVFNyVBOSVCQXxlbnwwfDB8MHx8&auto=format&fit=crop&w=1920&q=60"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <h3>参考サイト</h3>
+            <a href="https://weblasts.com/css/css-slideshow" target="_blank"
+              >CSSだけでスライドショー</a
+            >
+          </section>
+
+          <!-- 横スクロールスライドショー -->
+          <section class="cont position-relative-1">
+            <div class="inner">
+              <h2 class="cont-title">横スクロールスライドショー</h2>
+              <div class="slider">
+                <div class="slider-inner">
+                  <div class="slider-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8JUU2JTk4JTlGJUU3JUE5JUJBfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=1920&q=60"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="slider-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fCVFNiU5OCU5RiVFNyVBOSVCQXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1920&q=60"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="slider-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1468276311594-df7cb65d8df6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8JUU2JTk4JTlGJUU3JUE5JUJBfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=1920&q=60"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="slider-item">
+                    <img
+                      src="https://images.unsplash.com/photo-1596437974652-b146e5833dbd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fCVFNiU5OCU5RiVFNyVBOSVCQXxlbnwwfDB8MHx8&auto=format&fit=crop&w=1920&q=60"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h3>参考サイト</h3>
+
+            <a
+              href="https://web-camp.io/magazine/archives/80525"
+              target="_blank"
+              >HTMLとCSSだけでホームページにスライドショーを作る方法を解説</a
+            >
+          </section>
+
+          <!-- 自分が身につけた（つけたい）Webサイト制作の技術 -->
+          <section class="cont position-relative-1">
+            <div class="inner">
+              <h2 class="cont-title">身につけたWebサイト制作の技術</h2>
+
+              <div class="text-area">
+                <div class="text-content">
+                  <h3>なぜこの技術を身につけたのか</h3>
+                  <p>
+                    JavaScriptを使わずに実装することにより、動作が軽くなるのでモバイルにやさしい
+                  </p>
+                </div>
+
+                <div class="text-content">
+                  <h3>
+                    技術は身に付いているのか、どのような場面に活かせそうか
+                  </h3>
+                  <p>
+                    画像枚数によって対応できるぐらいには理解できておりポートフォリオサイトのキービジュアルに実装した
+                  </p>
+                </div>
+
+                <div class="text-content">
+                  <h3>習得するにあたってどのような問題があったのか</h3>
+                  <p>
+                    ポートフォリオサイトに実装したときにレスポンシブ対応が上手くいかなかった
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <!-- フッター -->
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-nav">
+            <ul>
+              <li><a href="../../index.html">Home</a></li>
+              <li><a href="../about.html">About</a></li>
+              <li><a href="../works-catalog.html">Works</a></li>
+              <li><a href="../blog-catalog.html">Blog</a></li>
+              <li><a href="../contactform.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-logo">
+            <img src="../../img/pf-logo.svg" alt="ロゴ" />
+          </div>
+        </div>
+
+        <div class="cr">
+          <small>© 2022 Mahiro,K PORTFOLIO</small>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../../js/index.js"></script>
+  </body>
+</html>
