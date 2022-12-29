@@ -1,0 +1,222 @@
+/* 矢印ボタン付きスライドショー */
+
+.slideshow {
+  width: 70%;
+  position: relative;
+  overflow: hidden;
+  margin: 50px auto;
+}
+
+input[name="slideshow"] {
+  display: none;
+}
+
+/* :::::: slideContents :::::: */
+.slideContents {
+  display: flex;
+  position: relative;
+  width: 400%;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  -webkit-user-select: none;
+  user-select: none;
+  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.slideContents div {
+  width: 25%;
+}
+.slideContents div img {
+  max-width: 100%;
+  height: auto;
+  padding: 0 50px;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+@media (min-width: 520px) {
+  .slideContents div img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+}
+
+/* :::::: arrows :::::: */
+.arrow,
+.arrow label,
+.arrow .ico {
+  position: absolute;
+}
+.arrow {
+  top: 0;
+  margin: 0;
+  transition: background 0.3s;
+}
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+.arrow:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.arrow,
+.arrow label {
+  cursor: pointer;
+  width: 50px;
+  height: 100%;
+}
+.arrow label {
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.arrow .ico {
+  top: calc(50% - 6px);
+  width: 12px;
+  height: 12px;
+  border-top: 3px solid #adff2f;
+  opacity: 1;
+}
+.prev .ico {
+  left: 50%;
+  border-left: 3px solid #adff2f;
+  transform: rotate(-45deg);
+  transition: left 0.3s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.3s;
+}
+.next .ico {
+  right: 50%;
+  border-right: 3px solid #adff2f;
+  transform: rotate(45deg);
+  transition: right 0.3s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.3s;
+}
+.arrow:hover .ico {
+  opacity: 0.6;
+}
+.prev:hover .ico {
+  left: calc(50% - 6px);
+}
+.next:hover .ico {
+  right: calc(50% - 6px);
+}
+
+/* :::::: mechanism :::::: */
+#switch1:checked ~ .slideContents {
+  transform: translateX(0);
+}
+#switch2:checked ~ .slideContents {
+  transform: translateX(-25%);
+}
+#switch3:checked ~ .slideContents {
+  transform: translateX(-50%);
+}
+#switch4:checked ~ .slideContents {
+  transform: translateX(-75%);
+}
+
+/* :::::: arrow mechanism :::::: */
+.arrow label {
+  pointer-events: none;
+}
+#switch1:checked ~ .prev label[for="switch4"],
+#switch2:checked ~ .prev label[for="switch1"],
+#switch3:checked ~ .prev label[for="switch2"],
+#switch4:checked ~ .prev label[for="switch3"],
+#switch1:checked ~ .next label[for="switch2"],
+#switch2:checked ~ .next label[for="switch3"],
+#switch3:checked ~ .next label[for="switch4"],
+#switch4:checked ~ .next label[for="switch1"] {
+  pointer-events: auto;
+}
+/* ---------------------------------------------- */
+
+/* フェードイン･アウトするスライドショー */
+.slide-fade {
+  position: relative;
+  width: 70%;
+  /* padding-topでレスポンシブ対応 */
+  padding-top: 48.75%;
+  overflow: hidden;
+  margin: 20px auto 0;
+}
+
+.slide-fade img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: slide 40s ease infinite;
+}
+
+.slide-fade img:nth-child(2) {
+  animation-delay: 10s;
+}
+
+.slide-fade img:nth-child(3) {
+  animation-delay: 20s;
+}
+
+.slide-fade img:nth-child(4) {
+  animation-delay: 30s;
+}
+
+@keyframes slide {
+  /* 0秒の時点では非表示 */
+  0% {
+    opacity: 0;
+  }
+  /* 4秒経過(4秒かけて表示)*/
+  10% {
+    opacity: 1;
+  }
+  /* 8秒経過(4秒間表示) */
+  20% {
+    opacity: 1;
+  }
+  /* 12秒経過(4秒かけて非表示) */
+  30% {
+    opacity: 0;
+  }
+  /* 40秒まで非表示 */
+  100% {
+    opacity: 0;
+  }
+}
+/* ---------------------------------------------- */
+
+/* 横スクロールスライドショー */
+.slider {
+  width: 70%;
+  position: relative;
+  overflow: hidden;
+  margin: 50px auto;
+}
+
+.slider-inner {
+  width: 400%;
+  display: flex;
+  animation: slider 16s infinite ease;
+}
+
+.slider-item {
+  width: 100%;
+}
+
+@keyframes slider {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-25%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  75% {
+    transform: translateX(-75%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* ---------------------------------------------- */
