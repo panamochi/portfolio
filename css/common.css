@@ -793,7 +793,7 @@ p[class*="description"] {
 .loader.hide {
   opacity: 0;
   pointer-events: none;
-  transition: opacity 1400ms;
+  transition: opacity 1000ms;
 }
 .loader span {
   position: relative;
