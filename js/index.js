@@ -53,12 +53,26 @@ function scrollEvent() {
 }
 
 // ローディングアニメーション
-const loading = document.querySelector(".loader");
+function loadingPage() {
+  const loading = document.querySelector(".loader");
+  loading.classList.add("hide");
+}
 
-window.addEventListener(
-  "load",
-  () => {
-    loading.classList.add("hide");
-  },
-  false
-);
+if (!sessionStorage.getItem("visited")) {
+  sessionStorage.setItem("visited", "first");
+  window.addEventListener("load", () => {
+    setTimeout(loadingPage, 2000);
+  });
+  setTimeout(loadingPage, 5000);
+} else {
+  loadingPage();
+}
+
+// const loading = document.querySelector(".loader");
+// window.addEventListener(
+//   "load",
+//   () => {
+//     loading.classList.add("hide");
+//   },
+//   false
+// );
