@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahiro,K PORTFOLIO</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./img/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <script src="./js/smoothscroll.min.js"></script>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- ヘッダー -->
+      <header class="header-area">
+        <div class="header">
+          <div class="header-inner flex">
+            <h1 class="header-logo">
+              <a href="./index.html">
+                <img src="./img/pf-logo.svg" alt="Mahiro,K PORTFOLIO" />
+              </a>
+            </h1>
+
+            <!-- ハンバーガーメニュー -->
+            <div class="hamburger-menu">
+              <input type="checkbox" id="menu-btn-check" />
+
+              <label for="menu-btn-check" class="menu-btn"><span></span></label>
+
+              <div class="menu-content">
+                <ul>
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="./html/about.html">About</a></li>
+                  <li><a href="./html/works-catalog.html">Works</a></li>
+                  <li><a href="./html/blog-catalog.html">Blog</a></li>
+                  <li><a href="./html/contactform.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- ナヴィゲーション -->
+            <nav class="header-nav">
+              <ul class="nav flex">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./html/about.html">About</a></li>
+                <li><a href="./html/works-catalog.html">Works</a></li>
+                <li><a href="./html/blog-catalog.html">Blog</a></li>
+                <li><a href="./html/contactform.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- ページトップボタン -->
+        <div class="home">
+          <img src="./img/Top-btn@3x.png" alt="" />
+        </div>
+      </header>
+
+      <!-- メイン -->
+      <main class="main">
+        <!-- ファーストビュー、キービジュアル -->
+        <div class="hero-area">
+          <img src="./img/hero-img/hero-img01.jpg" alt="キービジュアル01" />
+          <img src="./img/hero-img/hero-img02.jpg" alt="キービジュアル02" />
+          <img src="./img/hero-img/hero-img03.jpg" alt="キービジュアル03" />
+
+          <h2 class="hero-logo">
+            <img src="./img/pf-hero-logo.svg" alt="ヒーローロゴ" />
+          </h2>
+
+          <p class="hero-title">
+            <img
+              src="./img/pf-main-title@3x.png"
+              alt="QlipプログラミングスクールWEBアプリケーション製作科"
+            />
+          </p>
+        </div>
+
+        <!-- アバウト -->
+        <section class="about">
+          <div class="inner position-relative-1">
+            <h2 class="about-title"><span class="heading">A</span>bout</h2>
+            <div class="about-content flex">
+              <div>
+                <img
+                  src="./img/about-photo.JPG"
+                  alt="自画像"
+                  class="about-icon"
+                />
+              </div>
+
+              <div class="about-me">
+                <h3 class="name">
+                  <span class="heading">M</span>AHIRO
+                  <span class="heading">K</span>IDA
+                </h3>
+                <p class="about-text">
+                  Qlipプログラミングスクール<br />
+                  WEBアプリケーション製作科<br />
+                  入校 2022/09/08 <br />
+                  修了予定 2023/03/07
+                </p>
+              </div>
+            </div>
+            <div class="btn-area">
+              <a href="./html/about.html" class="btn-primary">READ MORE</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- ワークス -->
+        <section class="works">
+          <div class="inner position-relative-1">
+            <h2 class="works-title"><span class="heading">W</span>orks</h2>
+            <ul class="works-list flex">
+              <li class="fade">
+                <img src="./img/works01.png" alt="works01" />
+                <h3 class="works-list_title">Facebookカバー制作</h3>
+                <p class="works-list_description">
+                  制作課題としてクリップ のFacebookカバーを制作しました。
+                </p>
+              </li>
+
+              <li class="fade">
+                <img src="./img/works02.png" alt="works02" />
+                <h3 class="works-list_title">サイトロゴ制作</h3>
+                <p class="works-list_description">
+                  Adobe
+                  Illustratorを使用してポートフォリオサイト用のロゴをデザインしました。
+                </p>
+              </li>
+
+              <li class="fade">
+                <img src="./img/coming_soon@250x250.jpg" alt="works03" />
+                <h3 class="works-list_title">Coming soon</h3>
+                <p class="works-list_description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </li>
+            </ul>
+
+            <div class="btn-area">
+              <a href="./html/works-catalog.html" class="btn-primary"
+                >READ MORE</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <!-- ブログ -->
+        <section class="blog">
+          <div class="inner position-relative-1">
+            <h2 class="blog-title"><span class="heading">B</span>log</h2>
+            <ul class="blog-list flex">
+              <li class="fade">
+                <a href="./html/blog/blog-01.html">
+                  <img src="./img/blog-img@250x250.jpg" alt="blog01" />
+                  <h3 class="blog-list_title">第3回朝礼</h3>
+                  <p class="blog-list_description">
+                    テーマ「身に着けたいWEBサイト技術」でCSSだけでスライドショー実装に挑戦しました。
+                  </p>
+                </a>
+              </li>
+
+              <li class="fade">
+                <img src="./img/coming_soon@250x250.jpg" alt="blog02" />
+                <h3 class="blog-list_title">Coming soon</h3>
+                <p class="blog-list_description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+              </li>
+
+              <li class="fade">
+                <img src="./img/coming_soon@250x250.jpg" alt="blog03" />
+                <h3 class="blog-list_title">Coming soon</h3>
+                <p class="blog-list_description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+              </li>
+            </ul>
+
+            <div class="btn-area">
+              <a href="./html/blog-catalog.html" class="btn-primary"
+                >READ MORE</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <!-- プロセス -->
+        <section class="process">
+          <div class="process-inner position-relative-1">
+            <h2 class="process-title"><span class="heading">P</span>rocess</h2>
+            <p class="process-text">ポートフォリオサイトの制作過程です。</p>
+
+            <div class="slide-area">
+              <ul class="slide">
+                <li class="slide-item">
+                  <img
+                    src="./img/process-img/process-img01.png"
+                    alt="サイトマップ"
+                  />
+                </li>
+                <li class="slide-item">
+                  <img
+                    src="./img/process-img/process-img02.png"
+                    alt="コンテンツマップ"
+                  />
+                </li>
+                <li class="slide-item">
+                  <img
+                    src="./img/process-img/process-img03.png"
+                    alt="ワイヤーフレーム"
+                  />
+                </li>
+                <li class="slide-item">
+                  <img
+                    src="./img/process-img/process-img04.png"
+                    alt="サイトロゴ制作"
+                  />
+                </li>
+                <li class="slide-item">
+                  <img
+                    src="./img/process-img/process-img05.png"
+                    alt="デザインカンプ"
+                  />
+                </li>
+                <li class="slide-item">
+                  <img
+                    src="./img/process-img/process-img06.png"
+                    alt="コーディング"
+                  />
+                </li>
+                <li class="slide-item">
+                  <img
+                    src="./img/process-img/process-img07.png"
+                    alt="トップページ完成"
+                  />
+                </li>
+              </ul>
+
+              <ul class="slide">
+                <li class="slide-item">
+                  <img
+                    src="./img/process-img/process-img01.png"
+                    alt="サイトマップ"
+                  />
+                </li>
+                <li class="slide-item">
+                  <img
+                    src="./img/process-img/process-img02.png"
+                    alt="コンテンツマップ"
+                  />
+                </li>
+                <li class="slide-item">
+                  <img
+                    src="./img/process-img/process-img03.png"
+                    alt="ワイヤーフレーム"
+                  />
+                </li>
+                <li class="slide-item">
+                  <img
+                    src="./img/process-img/process-img04.png"
+                    alt="サイトロゴ制作"
+                  />
+                </li>
+                <li class="slide-item">
+                  <img
+                    src="./img/process-img/process-img05.png"
+                    alt="デザインカンプ"
+                  />
+                </li>
+                <li class="slide-item">
+                  <img
+                    src="./img/process-img/process-img06.png"
+                    alt="コーディング"
+                  />
+                </li>
+                <li class="slide-item">
+                  <img
+                    src="./img/process-img/process-img07.png"
+                    alt="トップページ完成"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- コンタクト -->
+        <section class="contact">
+          <div class="inner position-relative-1">
+            <h2 class="contact-title"><span class="heading">C</span>ontact</h2>
+
+            <p class="contact-text">
+              お問い合わせは、問い合わせフォームからお願いします。<br />
+              お気軽にお問い合わせください。
+            </p>
+
+            <div class="btn-area">
+              <a href="./html/contactform.html" class="btn-contact">
+                お問い合わせフォームへ
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- フッター -->
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-nav">
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./html/about.html">About</a></li>
+              <li><a href="./html/works-catalog.html">Works</a></li>
+              <li><a href="./html/blog-catalog.html">Blog</a></li>
+              <li><a href="./html/contactform.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-logo">
+            <img src="./img/pf-logo.svg" alt="ロゴ" />
+          </div>
+        </div>
+
+        <div class="cr">
+          <small>© 2022 Mahiro,K PORTFOLIO</small>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
