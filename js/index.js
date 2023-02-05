@@ -51,3 +51,19 @@ function scrollEvent() {
     pageTopBtn.classList.remove("show");
   }
 }
+
+// ローディングアニメーション
+function loadingPage() {
+  const loading = document.querySelector(".loader");
+  loading.classList.add("hide");
+}
+
+if (!sessionStorage.getItem("visited")) {
+  sessionStorage.setItem("visited", "first");
+  window.addEventListener("load", () => {
+    setTimeout(loadingPage, 2000);
+  });
+  setTimeout(loadingPage, 5000);
+} else {
+  loadingPage();
+}
