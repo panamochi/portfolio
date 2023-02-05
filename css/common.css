@@ -790,6 +790,68 @@ p[class*="description"] {
   z-index: 1;
 }
 
+/* ローディングアニメーション */
+.loader {
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: #769b47;
+}
+.loader.hide {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1400ms;
+}
+.loader span {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: #eaeef0;
+  border: 6px solid #eaeef0;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 1),
+    8px 8px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.loader span::before {
+  content: "";
+  position: absolute;
+  inset: 40px;
+  background: #eaeef0;
+  border-radius: 50%;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 1),
+    8px 8px 25px rgba(0, 0, 0, 0.25), inset 3px 3px 10px rgba(0, 0, 0, 0.1),
+    inset -1px -1px 15px rgba(255, 255, 255, 1);
+  border: 2px solid #eaeef0;
+  z-index: 1;
+}
+.loader span i {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(#387d39, #89c341, #f0f34a);
+  border-radius: 50%;
+  filter: blur(5px);
+  animation: loading 1s linear infinite;
+}
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loader-text {
+  font-size: 1.5rem;
+  position: absolute;
+  z-index: 2;
+  text-transform: uppercase;
+}
+
 /* 全体のアニメーション */
 .fade.hidden {
   opacity: 0;
